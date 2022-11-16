@@ -57,10 +57,10 @@ local function webhook()
 			["embeds"] = {
 				{
 					["author"] = {
-						["name"] = **"Anime Adventures"**,
+						["name"] = "**Anime Adventures**",
 						["icon_url"] = ""
 					},
-					["description"] = **Name** : ||"..game:GetService("Players").LocalPlayer.Name.."||",
+					["description"] = "**Name**" : "||..game:GetService("Players").LocalPlayer.Name..||",
 					["color"] = 110335,
 
 					["thumbnail"] = {
