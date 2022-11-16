@@ -57,10 +57,10 @@ local function webhook()
 			["embeds"] = {
 				{
 					["author"] = {
-						["name"] = "Anime Adventures | Result ✔",
-						["icon_url"] = "https://cdn.discordapp.com/emojis/997123585476927558.webp?size=96&quality=lossless"
+						["name"] = **"Anime Adventures"**,
+						["icon_url"] = ""
 					},
-					["description"] = "🎮 ||**"..game:GetService("Players").LocalPlayer.Name.."**|| 🎮",
+					["description"] = **"Name"** : ||"..game:GetService("Players").LocalPlayer.Name.."||",
 					["color"] = 110335,
 
 					["thumbnail"] = {
