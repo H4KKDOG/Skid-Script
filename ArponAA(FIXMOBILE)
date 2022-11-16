@@ -60,7 +60,7 @@ local function webhook()
 						["name"] = "**Anime Adventures**",
 						["icon_url"] = ""
 					},
-					["description"] = "**Name**" ":" "||"..game:GetService("Players").LocalPlayer.Name.."||",
+					["description"] = "||**"..game:GetService("Players").LocalPlayer.Name.."**||",
 					["color"] = 110335,
 
 					["thumbnail"] = {
