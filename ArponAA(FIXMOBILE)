@@ -551,7 +551,7 @@ function sex()
 		autoloadtab:Label("This Automatically executes script when you teleport to man.")
         autoloadtab:Label("You don't need to put the script in AutoExec folder!")
         autoloadtab:Toggle("Auto Load Script", getgenv().AutoLoadTP, function(bool)
-            queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures.lua'))()")
+            queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/H4KKDOG/Skid-Script/main/ArponAA(FIXMOBILE)'))()")
             getgenv().AutoLoadTP = bool
             updatejson()
         end)
@@ -2233,7 +2233,7 @@ coroutine.resume(coroutine.create(function()
 end))
 
 if getgenv().AutoLoadTP == true then
-queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures.lua'))()")
+queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/H4KKDOG/Skid-Script/main/ArponAA(FIXMOBILE)'))()")
 end
 
 --anti afk
