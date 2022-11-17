@@ -58,7 +58,7 @@ local function webhook()
 				{
 					["author"] = {
 						["name"] = "Anime Adventures",
-						["icon_url"] = "https://www.roblox.com/headshot-thumbnail/image?userId=" ..game.Players.LocalPlayer.userId.. "&width=30&height=30&format=png"
+						["icon_url"] = "https://www.roblox.com/headshot-thumbnail/image?userId=" ..game.Players.LocalPlayer.userId.. "&width=100&height=100&format=png"
 					},
 					["description"] = "",
 					["color"] = 16777215,
