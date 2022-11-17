@@ -58,7 +58,7 @@ local function webhook()
 				{
 					["author"] = {
 						["name"] = "Anime Adventures",
-						["icon_url"] = ""
+						["icon_url"] = "https://tr.rbxcdn.com/65e1c5e9030dfd5bcb9780b66fbe90e8/150/150/Image/Png"
 					},
 					["description"] = "",
 					["color"] = 16777215,
