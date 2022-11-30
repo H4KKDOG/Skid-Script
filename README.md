@@ -1,14 +1,12 @@
-# Loadstring
 
-
-Anime Adventures
+##### Anime Adventures
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/H4KKDOG/Skid-Script/main/NewArponAA(MOBILE)"))()
 ```
 
 
 
-Da Hood/Hood Custom
+##### Da Hood/Hood Custom
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/MajuNuko/SIll/main/MIKO.silentaim.gg/credsFuckedUrmom"))()
 DaHoodSettings.Prediction = 0.14573
