@@ -14,7 +14,7 @@ Aiming.TargetPart = {"Head", "UpperTorso", "LowerTorso", "HumanoidRootPart", "Ri
 Aiming.FOV = 40
 Aiming.FOVSides = 25
 Aiming.HitChance = 110
-Aiming.ShowFOV = false
+Aiming.ShowFOV = true
 -- dont Mess with Shit below --
 local RunService = game:GetService("RunService")
 
