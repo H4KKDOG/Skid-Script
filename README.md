@@ -8,7 +8,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/H4KKDOG/Skid-Script/m
 
 #### Da Hood/Hood Custom
 ```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/MajuNuko/SIll/main/MIKO.silentaim.gg/credsFuckedUrmom"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/H4KKDOG/Skid-Script/main/MobileSilentAim"))()
 DaHoodSettings.Prediction = 0.14573
 Aiming.TargetPart = {"Head", "UpperTorso", "LowerTorso", "HumanoidRootPart", "RightFoot", "LeftFoot"}
 Aiming.FOV = 35.3
