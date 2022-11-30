@@ -9,9 +9,9 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/H4KKDOG/Skid-Script/m
 #### Da Hood/Hood Custom
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/H4KKDOG/Skid-Script/main/MobileSilentAim"))()
-DaHoodSettings.Prediction = 0.14573
+DaHoodSettings.Prediction = 0.181
 Aiming.TargetPart = {"Head", "UpperTorso", "LowerTorso", "HumanoidRootPart", "RightFoot", "LeftFoot"}
-Aiming.FOV = 35.3
+Aiming.FOV = 40
 Aiming.FOVSides = 25
 Aiming.HitChance = 110
 Aiming.ShowFOV = false
