@@ -1,4 +1,4 @@
-                            local Aiming = loadstring(game:HttpGet("https://raw.githubusercontent.com/MajuNuko/InfinityAim/main/UAYzXvx", true))()
+                            local Aiming = loadstring(game:HttpGet("https://raw.githubusercontent.com/H4KKDOG/Skid-Script/main/SilentAim", true))()
                             Aiming.TeamCheck(false)
                              
                             
