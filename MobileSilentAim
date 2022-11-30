@@ -45,7 +45,7 @@
                             local __index
                             __index = hookmetamethod(game, "__index", function(t, k)
                                 -- // Check if it trying to get our mouse's hit or target and see if we can use it
-                                if ((k == "Hit" or k == "Target") and Aiming.Check()) then
+                                if (t:IsA("Mouse") and (k == "Hit" or k == "Target") and Aiming.Check()) then
                                     local SelectedPart = Aiming.SelectedPart
                             
                                     -- // Hit/Target
