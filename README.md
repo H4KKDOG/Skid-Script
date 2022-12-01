@@ -28,5 +28,5 @@ RunService.Heartbeat:Connect(function()
 end)
 ####Arsenal
 ```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/H4KKDOG/Skid-Script/main/KiriotESP"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/H4KKDOG/Skid-Script/main/ArsenalScript"))()
 ```
