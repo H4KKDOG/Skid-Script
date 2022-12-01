@@ -1,7 +1,7 @@
 
 #### Anime Adventures
 ```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/H4KKDOG/Skid-Script/main/NewArponAA(MOBILE)"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/H4KKDOG/Skid-Script/main/AnimeAdventure(FixTouch)"))()
 ```
 #### Da Hood/Hood Custom
 ```lua
