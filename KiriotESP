@@ -24,7 +24,7 @@ local plr = plrs.LocalPlayer
 local mouse = plr:GetMouse()
 
 local V3new = Vector3.new
-local WorldToViewportPoint = cam.WorldToViewportPoint
+local WorldToViewportPoint = cam.WorldToViewportPoint(v.Character.HumanoidRootPart.Position)
 
 --Functions--
 local function Draw(obj, props)
