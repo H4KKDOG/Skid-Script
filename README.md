@@ -1,4 +1,4 @@
-
+########## Credits to all owner of main source code i use
 #### Anime Adventures
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/H4KKDOG/Skid-Script/main/AnimeAdventure(FixTouch)"))()
