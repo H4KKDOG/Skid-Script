@@ -1,2 +1,2 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/H4KKDOG/Skid-Script/main/ArsenalHitbox"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/H4KKDOG/Skid-Script/main/HitboxExtender"))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/H4KKDOG/Skid-Script/main/KiriotESP"))()
