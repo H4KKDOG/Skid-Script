@@ -1,4 +1,4 @@
-## PC that i convert to mobile script (Credits to owner of the source code)
+## Random Scripts i found in the internet (Credits to owner of the source code)
 
 #### Anime Adventures
 ```lua
