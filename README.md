@@ -57,3 +57,8 @@ end)
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/H4KKDOG/Skid-Script/main/ArsenalScript"))()
 ```
+
+#### CamLock(FPSGUI)
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/H4KKDOG/Skid-Script/main/CamLock(DH)"))()
+```
