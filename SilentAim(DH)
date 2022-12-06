@@ -423,6 +423,26 @@ function Aiming.GetClosestPlayerToCursor()
         end
     end
 
+RunService.RenderStepped:Connect(function()
+                    if Aiming.Character.Humanoid.Jump == true and AimlockTarget.Character.Humanoid.FloorMaterial == Enum.Material.Air then
+                    Aiming.TargetPart = "RightFoot"
+                else
+                    Aiming.Character:WaitForChild("Humanoid").StateChanged:Connect(function(new)
+                    
+                    if new == Enum.HumanoidStateType.Freefall then
+                    Aiming.TargetPart = "RightFoot"
+                    else
+                    
+                    Aiming.TargetPart = Aiming.SelectedPart
+                    
+                    end
+                    
+                    end)
+                    
+                end
+
+end)
+
     -- // End
     Aiming.Selected = ClosestPlayer
     Aiming.SelectedPart = TargetPart
