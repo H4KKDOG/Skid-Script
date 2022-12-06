@@ -1,4 +1,4 @@
-## Random Scripts i found in the internet (Credits to owner of the source code)
+## Random scripts i found in the internet (Credits to owner of the source code)
 
 #### Anime Adventures
 ```lua
