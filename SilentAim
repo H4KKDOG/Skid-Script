@@ -39,17 +39,17 @@ getgenv().Aiming = {
 
     ShowFOV = false,
     FOV = 15,
-    FOVSides = 125,
+    FOVSides = 25,
     FOVColour = Color3fromRGB(255, 255, 255),
 
     VisibleCheck = true,
     
-    HitChance = 99,
+    HitChance = 100,
 
     Selected = nil,
     SelectedPart = nil,
 
-    TargetPart = {"Head","UpperTorso","LowerTorso","RightUpperLeg","LeftUpperLeg","LeftLowerLeg","RightLowerLeg","RightFoot","LeftFoot"},
+    TargetPart = {"Head", "UpperTorso", "HumanoidRootPart", "LowerTorso", "LeftHand", "RightHand", "LeftLowerArm", "RightLowerArm", "LeftUpperArm", "RightUpperArm", "LeftFoot", "LeftLowerLeg",  "LeftUpperLeg", "RightLowerLeg", "RightFoot",  "RightUpperLeg"},
 
     Ignored = {
         Teams = {
@@ -60,7 +60,7 @@ getgenv().Aiming = {
         },
         Players = {
             LocalPlayer,
-            3254489874
+            91318356
         }
     }
 }
@@ -68,8 +68,8 @@ local Aiming = getgenv().Aiming
 
 -- // Create circle
 local circle = Drawingnew("Circle")
-circle.Transparency = .8
-circle.Thickness = 2
+circle.Transparency = 0.5
+circle.Thickness = 0.8
 circle.Color = Aiming.FOVColour
 circle.Filled = false
 Aiming.FOVCircle = circle
@@ -422,6 +422,7 @@ function Aiming.GetClosestPlayerToCursor()
             end
         end
     end
+    
 
     -- // End
     Aiming.Selected = ClosestPlayer
@@ -436,3 +437,5 @@ end)
 
 -- //
 return Aiming
+
+-- // If you want the examples, look at the docs.
