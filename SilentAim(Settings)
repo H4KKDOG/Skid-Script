@@ -16,7 +16,7 @@
                                 SilentAim = true,
                                 AimLock = false,
                                 Prediction = 0.181,
-                                AimLockKeybind = Enum.KeyCode.c
+                                AimLockKeybind = Enum.KeyCode.C
                             }
                             getgenv().DaHoodSettings = DaHoodSettings
                             
@@ -73,4 +73,21 @@
                             
                                     CurrentCamera.CFrame = CFrame.lookAt(CurrentCamera.CFrame.Position, Hit.Position)
                                 end
+                                end)
+
+                          -- // Underground Resolver
+                          game.Players.LocalPlayer.Chatted:Connect(
+                            function(L_114_arg0)
+                              if L_114_arg0 == "/e res" then
+                                RunService.Heartbeat:Connect(function()
+                                    pcall(function()
+                                        for i,v in pairs(game.Players:GetChildren()) do
+                                            if v.Name ~= game.Players.LocalPlayer.Name then
+                                                local hrp = v.Character.HumanoidRootPart
+                                                hrp.Velocity = Vector3.new(hrp.Velocity.X, 0, hrp.Velocity.Z)    
+                                                hrp.AssemblyLinearVelocity = Vector3.new(hrp.Velocity.X, 0, hrp.Velocity.Z)
+                                                print("Underground AA Resolved")
+                                            end
+                                        end
+                                    end)
                                 end)
