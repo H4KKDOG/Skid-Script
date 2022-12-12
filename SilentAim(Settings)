@@ -60,9 +60,6 @@
                               end)
 
                           -- // Underground Resolver
-                          game.Players.LocalPlayer.Chatted:Connect(
-                            function(L_114_arg0)
-                              if L_114_arg0 == "/e res" then
                                 print("Underground AA Resolved")
                                 RunService.Heartbeat:Connect(function()
                                     pcall(function()
