@@ -67,7 +67,7 @@ if game.CoreGui:FindFirstChild("FinityUI") then
 end
 
 -- Ui Section
-local lib = loadstring(game:HttpGet("http://finity.vip/scripts/finity_lib.lua"))()
+local Uilib = loadstring(game:HttpGet("https://raw.githubusercontent.com/ArponAG/Scripts/main/finitylib"))()
 local exec = tostring(identifyexecutor())
 local Window = Uilib.new(true, "[Finity] Anime Adventures "..version.." - "..exec)
 Window.ChangeToggleKey(Enum.KeyCode.Backquote)
@@ -158,7 +158,6 @@ local function UnitSec()
         LoadUnits()
     end
     GetUnits()
-    end)
 end
 
 SelectUnits:Cheat("Checkbox","Auto Save Equip Units", function(bool)
@@ -506,7 +505,7 @@ local function AutoFarmSec()
         saveSettings()
     end,{enabled = Settings.AutoNext})
 
-    AutoFarmconfig:Cheat("Checkbox","Auto Next Room [Inf Castle]", function(bool)
+    AutoFarmConfig:Cheat("Checkbox","Auto Next Room [Inf Castle]", function(bool)
         Settings.AutoContinue = bool
         saveSettings()
     end,{enabled = Settings.AutoContinue })
@@ -1325,9 +1324,9 @@ function autoload()
     pcall(function()
         local exec = tostring(identifyexecutor())
         if exec == "Synapse X" and Settings.AutoLoadScript then
-            syn.queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/H4KKDOG/Skid-Script/main/AAFinity'))()")
+            syn.queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures_v2__Beta.lua'))()")
         elseif exec ~= "Synapse X" and Settings.AutoLoadScript then
-            queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/H4KKDOG/Skid-Script/main/AAFinity'))()")
+            queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/ArponAG/Scripts/main/AnimeAdventures_v2__Beta.lua'))()")
         end
     end)
 end
@@ -2231,17 +2230,19 @@ end
 coroutine.resume(coroutine.create(function()
     while task.wait() do
         if not Settings.AutoInfinityCastle then
-            if not checkChallenge() then
+            if not checkChallenge() then 
                 if  Settings.AutoChallenge and checkReward() == true then
-                    startChallenge()
+                    startChallenge() 
                 else
                     startfarming()
                 end
             elseif checkChallenge() == true then
                 startfarming()
+                BabyWebhook()
+                SnipeShopNew()
             end
         elseif not Settings.AutoInfinityCastle == true then
-            if not checkChallenge() then
+            if not checkChallenge() then 
                 if  Settings.AutoChallengeAll then
                     startChallenge() 
                 else
@@ -2249,7 +2250,22 @@ coroutine.resume(coroutine.create(function()
                 end
             elseif checkChallenge() == true then
                 startfarming()
+                BabyWebhook()
+                SnipeShopNew()
             end
+        elseif Settings.AutoInfinityCastle == true then
+            if not checkChallenge() then 
+                if  Settings.AutoChallenge and checkReward() == true then
+                    startChallenge() 
+                else
+                    FarmInfinityCastle()
+                end
+            elseif checkChallenge() == true then
+                FarmInfinityCastle()
+                BabyWebhook()
+                SnipeShopNew()
+            end
+        end
         if game.PlaceId ~= 8304191830 then
             local _wave = game:GetService("Workspace"):WaitForChild("_wave_num")
             if Settings.autoQuit and not Settings.AutoSell and tonumber(Settings.AutoSellWave) <= _wave.Value then
@@ -2364,7 +2380,7 @@ coroutine.resume(coroutine.create(function()
     task.spawn(function()
         local GameFinished = game:GetService("Workspace"):WaitForChild("_DATA"):WaitForChild("GameFinished")
         GameFinished:GetPropertyChangedSignal("Value"):Connect(function()
-            GameFinished.Value == true)
+            print("", GameFinished.Value == true)
             if GameFinished.Value == true then
                 repeat task.wait() until  game:GetService("Players").LocalPlayer.PlayerGui.ResultsUI.Enabled == true
                 task.wait(1.1)
