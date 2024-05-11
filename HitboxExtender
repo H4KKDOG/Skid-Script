@@ -1,35 +1,38 @@
-function getplrsname()
-for i,v in pairs(game:GetChildren()) do
-if v.ClassName == "Players" then
-return v.Name
+function PlrName()
+    for i,v in pairs(game:GetChildren()) do
+        if v.ClassName == "Players" then
+            return v.Name
+        end
+    end
 end
-end
-end
-local players = getplrsname()
-local plr = game[players].LocalPlayer
+
+local PName = PlrName()
+local Plr = game[PName].LocalPlayer
+
 coroutine.resume(coroutine.create(function()
-while  wait(1) do
-coroutine.resume(coroutine.create(function()
-for _,v in pairs(game[players]:GetPlayers()) do
-if v.Name ~= plr.Name and v.Character then
-v.Character.RightUpperLeg.CanCollide = false
-v.Character.RightUpperLeg.Transparency = 10
-v.Character.RightUpperLeg.Size = Vector3.new(15,15,15)
+    while task.wait(1) do
+        coroutine.resume(coroutine.create(function()
+            for _,v in pairs(game[PName]:GetPlayers()) do
+                if v.Name ~= Plr.Name and v.Character then
 
-v.Character.LeftUpperLeg.CanCollide = false
-v.Character.LeftUpperLeg.Transparency = 10
-v.Character.LeftUpperLeg.Size = Vector3.new(15,15,15)
+                    v.Character.RightUpperLeg.CanCollide = false
+                    v.Character.RightUpperLeg.Transparency = 1
+                    v.Character.RightUpperLeg.Size = Vector3.new(6,6,6)
 
-v.Character.HeadHB.CanCollide = false
-v.Character.HeadHB.Transparency = 10
-v.Character.HeadHB.Size = Vector3.new(5,5,5)
+                    v.Character.LeftUpperLeg.CanCollide = false
+                    v.Character.LeftUpperLeg.Transparency = 1
+                    v.Character.LeftUpperLeg.Size = Vector3.new(6,6,6)
 
-v.Character.HumanoidRootPart.CanCollide = false
-v.Character.HumanoidRootPart.Transparency = 10
-v.Character.HumanoidRootPart.Size = Vector3.new(15,15,15)
+                    v.Character.HeadHB.CanCollide = false
+                    v.Character.HeadHB.Transparency = 1
+                    v.Character.HeadHB.Size = Vector3.new(3,3,3)
 
-end
-end
-end))
-end
+                    v.Character.HumanoidRootPart.CanCollide = false
+                    v.Character.HumanoidRootPart.Transparency = 1
+                    v.Character.HumanoidRootPart.Size = Vector3.new(6,6,6)
+
+                end
+            end
+        end))
+    end
 end))
